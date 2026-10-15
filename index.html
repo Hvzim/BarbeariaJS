@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estilo Livre | Barbearia</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                ESTILO LIVRE
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <header id="home" class="hero d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Seu estilo, suas regras.</h1>
+            <p class="lead mt-3">
+                Mais que um corte, uma experiência.
+            </p>
+            <a href="#servicos" class="btn btn-warning btn-lg mt-3">
+                Conheça nossos serviços
+            </a>
+        </div>
+    </header>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img
+                        src="img/sobre.jpg"
+                        class="img-fluid rounded shadow"
+                        alt="Interior da barbearia Estilo Livre"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p>
+                        A Estilo Livre nasceu para quem valoriza personalidade,
+                        autenticidade e cuidado com a própria imagem.
+                    </p>
+                    <p>
+                        Unimos técnicas modernas, atendimento personalizado
+                        e um ambiente descontraído para transformar cada
+                        visita em uma experiência única.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Nossos Serviços</h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="img/corte.jpg"
+                            class="card-img-top service-img"
+                            alt="Corte de cabelo masculino"
+                            loading="lazy"
+                        >
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Corte Masculino</h3>
+                            <p class="card-text">
+                                Do clássico ao moderno, com acabamento
+                                feito para o seu estilo.
+                            </p>
+                            <p class="price">A partir de R$ 40,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="img/barba.jpg"
+                            class="card-img-top service-img"
+                            alt="Serviço profissional de barba"
+                            loading="lazy"
+                        >
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Barba</h3>
+                            <p class="card-text">
+                                Modelagem, alinhamento e cuidado
+                                para uma barba impecável.
+                            </p>
+                            <p class="price">A partir de R$ 25,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="img/combo.jpg"
+                            class="card-img-top service-img"
+                            alt="Serviço combinado de cabelo e barba"
+                            loading="lazy"
+                        >
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5">Cabelo + Barba</h3>
+                            <p class="card-text">
+                                O combo completo para renovar o visual
+                                em uma única visita.
+                            </p>
+                            <p class="price">A partir de R$ 60,00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">O que dizem nossos clientes</h2>
+
+            <div
+                id="carouselDepoimentos"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner text-center">
+
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <p class="fs-5">
+                                "Excelente atendimento e corte impecável.
+                                Virei cliente!"
+                            </p>
+                            <h3 class="h6">— Lucas M.</h3>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p class="fs-5">
+                                "Ambiente muito bom e profissionais
+                                que realmente entendem de estilo."
+                            </p>
+                            <h3 class="h6">— Rafael S.</h3>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <p class="fs-5">
+                                "O combo de cabelo e barba ficou perfeito.
+                                Recomendo!"
+                            </p>
+                            <h3 class="h6">— André C.</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselDepoimentos"
+                    data-bs-slide="prev"
+                    aria-label="Depoimento anterior"
+                >
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselDepoimentos"
+                    data-bs-slide="next"
+                    aria-label="Próximo depoimento"
+                >
+                    <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2 class="section-title text-center mb-4">Entre em Contato</h2>
+
+                    <form id="formContato">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite seu nome"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="seu@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea
+                                class="form-control"
+                                id="mensagem"
+                                name="mensagem"
+                                rows="4"
+                                placeholder="Como podemos ajudar?"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100">
+                            Enviar mensagem
+                        </button>
+
+                        <p id="feedback" class="text-success text-center mt-3"
+                           role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 Estilo Livre Barbearia. Projeto fictício para fins educacionais.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("formContato").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("feedback").textContent =
+                "Mensagem validada! Este formulário é demonstrativo e não envia dados.";
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

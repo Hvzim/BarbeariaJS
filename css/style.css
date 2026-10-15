@@ -1,0 +1,87 @@
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 76px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292929;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    color: #fff;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../img/banner.jpg") center / cover no-repeat;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 12px auto 0;
+    background-color: #d5a021;
+}
+
+#sobre .section-title::after {
+    margin-left: 0;
+}
+
+.service-img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    color: #8a6410;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.testimonial {
+    max-width: 650px;
+    min-height: 160px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .testimonial {
+        padding: 35px 30px;
+    }
+
+    .service-img {
+        height: 210px;
+    }
+}
